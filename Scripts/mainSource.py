@@ -1,24 +1,26 @@
-#!/usr/bin/env python3
-# Athur: NyboMønster
-# Sources:
-# Import list:
+#! /bin/python3
+### Author: NyboMønster
+###Main File
+### Imports fra system
 import sys
 import random
 import time
-# Import fra onboardscripts:
+### Imports fra costumscripts
+from measure import measuredData, message
 from umqttsimple import MQTTClient
-# Variables:
-username = 'RPI/1YearProject'
-password = 'RPIPass/1Year'
+import GPSScript
+### Variables
+username = 'RPI'
+password = 'public'
 broker = 'broker.RPI.io'
-msg = ("DeviceName:", "Temp", "Day")
-Originmsg = ("DeviceName:", "Temp", "Day")
-
-
-# Connection Function to RPI Broker
+counter = 0
+### KEA E bygning grønområde
+msg = ("t, h, s, 55.69194647082459, 12.554169821375735")
+Originmsg = ("t, h, s, 55.69194647082459, 12.554169821375735")
+### Main Functions
 def sub_cb(topic, msg):
     print((topic, msg))
-    if topic == b'1Year/ESP32Data' and msg == b'1Year/received':
+    if topic == b'ESP32Data' and msg == b'received':
         print('ESP Sendt Data')
 
 def connect_and_subscribe():
@@ -32,14 +34,14 @@ def connect_and_subscribe():
 def restart_and_reconnect():
     print('Failed to connect to MQTT broker. Reconnecting...')
     time.sleep(10)
-
-# Startups
+    machine.reset()
 try:
+### StartUps
     client = connect_and_subscribe()
     measuredData(Originmsg)
 except OSError as e:
     restart_and_reconnect()
-# Main Code:
+### Main Loop
 while True:
     try:
         client.check_msg()
@@ -47,6 +49,8 @@ while True:
             msg = measuredData(message)
             client.publish(topic, msg)
             last_message = time.time()
+            counter += 1
+            GPSScript.gpsFunktion1()
             time.sleep(0.5)
             print("------------------------------")
     except OSError as e:
@@ -57,4 +61,3 @@ while True:
         print("STOP!")
         sys.exit
         time.sleep(2)
-
