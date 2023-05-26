@@ -1,13 +1,18 @@
 #!/bin/bash
-#Author: NyboMønster
+# Author: NyboMønster
+
 # Variables
 messages=""
-#testmessages="123.4, 123.4, False, 123.4, 123.4"
 SentMessages="Messages sent"
 IFS=','
-###Main Code
-while :
+
+# Main Code
+while true
 do
-mosquitto_sub	-h	localhost	-t	"1Year/ESP32Data" -C	1	-R	$messages 
+mosquitto_sub	-h	localhost	-t	"1Year/ESP32Data" -C	1	-R	$messages | while true
+do 
+	echo $messages
+	sleep 1
+done
 done
 
