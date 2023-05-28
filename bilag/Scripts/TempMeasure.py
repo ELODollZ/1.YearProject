@@ -11,15 +11,27 @@ import time
 TempDevice0 = 0#dht.DHT11(Pin(25))
 TempDevice1 = 1#dht.DHT11(Pin(26))
 TempDevice2 = 2#dht.DHT11(Pin(27))
-message = ("DeviceNumber, Temp, Status")
-message.split(", ", 2)
-DeviceList = ("DeviceNumber0", "DeviceNumber1", "DeviceNumber2")
-TempList = ("Temp0", "Temp1", "Temp2")
+message = ("DeviceNumber: , Temp:, Status:")
+DeviceList = ("ESP32 #1")
+fullMessage = []
 # initialized:
 RandomNumberbool = random.randint(0,1)
 
+def messageMaker(message, TempList, Status):
+    for x in DeviceList:
+        Swapped = "DeviceNumber: " + DeviceList
+        newmsg = message.replace("DeviceNumber: ", Swapped)
+        Swapped = "Temp: " + str(TempList[0]) + ", Temp: " + str(TempList[1]) + ", Temp: " + str(TempList[2])  
+        newmsg = newmsg.replace("Temp", Swapped)
+        Swapped = "Status: " + str(Status)
+        newmsg = newmsg.replace("Status:", Swapped)
+    fullMessage.append(newmsg)
+    newmsg = fullMessage
+    return newmsg
+
 # Main function Code:
-def TempMeasure(Input, Output):
+def TempMeasure(msg):
+    fullMessage.clear()
     #Temp0 = TempDevice0.temperature()
     #temp1 = TempDevice1.temperature()
     #Temp2 = TempDevice2.temperature()
@@ -35,14 +47,10 @@ def TempMeasure(Input, Output):
     else:
         print("Failure in sensor")
     # Message Update:
-    for x in DeviceList:
-        Swapped = "DeviceNumber:" + x
-        newmsg = message.replace("DeviceNumber", Swapped)
-        Swapped = str(TempList)
-        newmsg = newmsg.replace("Temp", Swapped)
-        Swapped = str(Status)
-        newmsg = newmsg.replace("Status", Swapped)
-        print(newmsg)
+    TempList = Temp0, Temp1, Temp2
+    newmsg = messageMaker(message, TempList, Status)
+    return newmsg
 while True:
-    TempMeasure(TempDevice0, None)
+    newmessage = TempMeasure(message)
+    print(newmessage)
     time.sleep(1)

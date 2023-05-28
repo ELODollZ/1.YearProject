@@ -7,33 +7,34 @@ import time
 import threading
 
 # Variables:
-sensor = None
+sensor = 25
 sidsteTemp = None
 app = Flask(__name__)
 socketio = SocketIO(app)
 
 # App route paths:
-#@socketio.on('hentTemp')
-#def hentTemp():
-#    time.sleep(0.5)
-#    socketio.emit('temp', sidsteTemp)
+@socketio.on('hentTemp')
+def HentTemperatur():
+    time.sleep(0.5)
+    socketio.emit('HentTemperatur', sidsteTemp)
 @app.route('/')
 def index():
     return render_template('Index.html')
 
 
 # Main Code:
-#def readTemp():
-#    global sidsteTemp
-#    while True:
-#        time.sleep(2)
-#        try:
-#            sidsteTemp = sensor.read()
-#        except:
-#            sidsteTemp = None
-#
-#tempThread = threading.Thread(target=readTemp)
-#tempThread.start()
+def readTemp():
+    global sidsteTemp
+    while True:
+        time.sleep(2)
+        try:
+            #sidsteTemp = sensor.read()
+            sidsteTemp = sensor
+        except:
+            sidsteTemp = None
+
+tempThread = threading.Thread(target=readTemp)
+tempThread.start()
 
 
 # Host WebPage:
