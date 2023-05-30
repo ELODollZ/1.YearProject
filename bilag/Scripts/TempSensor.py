@@ -6,18 +6,26 @@ from machine import Pin, ADC
 import time
 
 # Variable list:
-PinNumber = 25
+PinNumber = 36
 tempSensor = ADC(Pin(PinNumber))
 tempSensor.atten(ADC.ATTN_0DB)
-tempSensor.width(ADC.WIDTH_12BIT)
-Minimum = 0
-Maximum = 4096
-
+# Config Information value calculation
+ADCOffset = 2.1
+MiniADC = 0
+MaxADC = 4095
+MaxVoltage = 0.950
+mV = 0.010
 # Main function code:
 
 def tempReadSensor():
+    #print(1)
     value = tempSensor.read()
-    CelciusValue = value - 500 / 10
+    #Test1 = (MaxADC / )
+    voltage = ((value / MaxADC) * MaxVoltage)
+    CelciusValue = (((value / MaxADC) * MaxVoltage) / mV) + ADCOffset
     print(value)
     print(CelciusValue)
     return CelciusValue
+#while True:
+#    tempReadSensor()
+#    time.sleep(1)

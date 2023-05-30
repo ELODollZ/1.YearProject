@@ -5,14 +5,15 @@
 import sys
 import random
 import time
+from TempMeasure import TempMeasure
 # Import fra onboardscripts:
 from umqttsimple import MQTTClient
 # Variables:
 username = 'RPI/1YearProject'
 password = 'RPIPass/1Year'
 broker = 'broker.RPI.io'
-msg = ("DeviceName:", "Temp", "Day")
-Originmsg = ("DeviceName:", "Temp", "Day")
+msg = ("DeviceName:", "Temp:", "Status:")
+Originmsg = ("DeviceName:", "Temp:", "Status:")
 
 
 # Connection Function to RPI Broker
@@ -44,7 +45,7 @@ while True:
     try:
         client.check_msg()
         if(time.time() - last_message) > message_interval:
-            msg = measuredData(message)
+            msg = TempMeasure(msg)
             client.publish(topic, msg)
             last_message = time.time()
             time.sleep(0.5)

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Heat sensor</title>
-	<scriptsrc="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
 	integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
 	crossorigin="anonymous"></script>
 </head>
@@ -11,14 +11,15 @@
 	<script>
 		var socket = io();
 		socket.emit('hentTemp')
-		socket.on('HentTemperatur' function(data) {
+		socket.on('HentTemperatur', function(data) {
 			console.log( data['valid'] )
-			if (data != 'None' && data['valid'] == true) {
-				document.getElementById('DeviceNumber').innerText = data['DeviceNumber']
-				document.getElementById('Temp0').innerText = data['temp_0']
-				document.getElementById('Temp1').innerText = data['temp_1']
-				document.getElementById('Temp2').innerText = data['temp_2']
-				document.getElementById('Status').innerText = data['Status']
+			if (data != 'None' ) {
+                str.match()
+				document.getElementById('DeviceNumber').innerText = data['DeviceNumber:']
+				document.getElementById('Temp0').innerText = data['Temp0:']
+				document.getElementById('Temp1').innerText = data['Temp1:']
+				document.getElementById('Temp2').innerText = data['Temp2:']
+				document.getElementById('Status').innerText = data['Status:']
 			}
 			socket.emit('hentTemp')
 					})
@@ -31,10 +32,10 @@
         <div class="gridtitle">Sensor 3</div>
         <div class="gridtitle">Status</div>
         <div id="DeviceNumber">Name</div>
-        <div id="Temp0">20°</div>
-        <div id="Temp1">30°</div>
-        <div id="Temp2">20°</div>
-        <div id="Status">Åben</div>
+        <div id="Temp0">Tempsensor</div>
+        <div id="Temp1">TempSensor</div>
+        <div id="Temp2">TempSensor</div>
+        <div id="Status">Status</div>
     </div>
     <div class="activity">
         <p id="activity">Is pumping</p>
