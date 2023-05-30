@@ -13,5 +13,3 @@ mosquitto_sub	-h	localhost	-t	"1Year/ESP32Data" -C	1	-R	$messages
 echo $messages
 sleep 1
 done
-
-
