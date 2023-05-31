@@ -12,14 +12,14 @@
 		var socket = io();
 		socket.emit('hentTemp')
 		socket.on('HentTemperatur', function(data) {
-			console.log(data)
-			if (data != 'None' ) {
-                str.match()
-				document.getElementById('DeviceNumber').innerText = data['DeviceNumber:']
-				document.getElementById('Temp0').innerText = data['Temp0:']
-				document.getElementById('Temp1').innerText = data['Temp1:']
-				document.getElementById('Temp2').innerText = data['Temp2:']
-				document.getElementById('Status').innerText = data['Status:']
+            console.log(data)
+            let [Name0, Value0, Name1, Value1, Name2, Value2, Name3, Value3, Name4, Value4, Fixed] = data
+			if (data != 'None') {
+				document.getElementById('DeviceNumber').innerText = Value0
+				document.getElementById('Temp0').innerText = Value1
+				document.getElementById('Temp1').innerText = Value2
+				document.getElementById('Temp2').innerText = Value3
+				document.getElementById('Status').innerText = Value4
 			}
 			socket.emit('hentTemp')
 					})
@@ -27,14 +27,14 @@
     <h1>Heat Sensor</h1>
     <div class="grid">
         <div class="gridtitle">DeviceNumber</div>
-        <div class="gridtitle">Sensor 1</div>
-        <div class="gridtitle">Sensor 2</div>
-        <div class="gridtitle">Sensor 3</div>
+        <div class="gridtitle">TempSensor1</div>
+        <div class="gridtitle">TempSensor2</div>
+        <div class="gridtitle">TempSensor3</div>
         <div class="gridtitle">Status</div>
         <div id="DeviceNumber">Name</div>
-        <div id="Temp0">Tempsensor</div>
-        <div id="Temp1">TempSensor</div>
-        <div id="Temp2">TempSensor</div>
+        <div id="Temp0">TempSensor1</div>
+        <div id="Temp1">TempSensor2</div>
+        <div id="Temp2">TempSensor3</div>
         <div id="Status">Status</div>
     </div>
     <div class="activity">

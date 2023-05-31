@@ -12,7 +12,7 @@ import time
 #TempDevice0 = tempReadSensor0()
 #TempDevice1 = tempReadSensor1()
 #TempDevice2 = tempReadSensor2()
-message = ("DeviceNumber:, Temp:, Status:")
+message = ("DeviceNumber, Temp, Status")
 DeviceList = ("ESP32 #1")
 fullMessage = []
 # initialized:
@@ -20,15 +20,21 @@ RandomNumberbool = random.randint(0,1)
 
 def messageMaker(message, TempList, Status):
     for x in DeviceList:
-        Swapped = "DeviceNumber: " + DeviceList
-        newmsg = message.replace("DeviceNumber:", Swapped)
-        Swapped = "Temp1: " + str(TempList[0]) + ", Temp2: " + str(TempList[1]) + ", Temp3: " + str(TempList[2])  
-        newmsg = newmsg.replace("Temp:", Swapped)
-        Swapped = "Status: " + str(Status)
-        newmsg = newmsg.replace("Status:", Swapped)
+        Swapped = "DeviceNumber," + DeviceList
+        newmsg = message.replace("DeviceNumber", Swapped)
+        Swapped = "Temp1, " + str(TempList[0]) + ", Temp2, " + str(TempList[1]) + ", Temp3, " + str(TempList[2])  
+        newmsg = newmsg.replace("Temp", Swapped)
+        Swapped = "Status, " + str(Status) + ", Fixed"
+        newmsg = newmsg.replace("Status", Swapped)
     fullMessage.append(newmsg)
-    newmsg = fullMessage
-    print(newmsg)
+    newmsg = str(fullMessage)
+    newmsg = newmsg.split(",", 11)
+#    fullMessage.clear()
+#    for x in newmsg:
+#        Var1 = x.split(":", 4)
+#        #print(Var1)
+#        fullMessage.append(Var1)
+    #newmsg = fullMessage
     return newmsg
 
 # Main function Code:
@@ -51,6 +57,7 @@ def TempMeasure(msg):
     # Message Update:
     TempList = Temp0, Temp1, Temp2
     newmsg = messageMaker(message, TempList, Status)
+    #print(newmsg)
     return newmsg
 #while True:
 #    newmessage = TempMeasure(message)
