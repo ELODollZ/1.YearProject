@@ -12,7 +12,7 @@
 		var socket = io();
 		socket.emit('hentTemp')
 		socket.on('HentTemperatur', function(data) {
-			console.log( data['valid'] )
+			console.log(data)
 			if (data != 'None' ) {
                 str.match()
 				document.getElementById('DeviceNumber').innerText = data['DeviceNumber:']

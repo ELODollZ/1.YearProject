@@ -4,13 +4,14 @@
 # Import List:
 import random
 import time
-from TempSensor import tempReadSensor0
-from TempSensor1 import tempReadSensor1
-from TempSensor2 import tempReadSensor2
+#from TempSensor import tempReadSensor0
+#from TempSensor1 import tempReadSensor1
+#from TempSensor2 import tempReadSensor2
+#from GetWeather9 import get_weather
 # Variable List:
-TempDevice0 = tempReadSensor0()
-TempDevice1 = tempReadSensor1()
-TempDevice2 = tempReadSensor2()
+#TempDevice0 = tempReadSensor0()
+#TempDevice1 = tempReadSensor1()
+#TempDevice2 = tempReadSensor2()
 message = ("DeviceNumber:, Temp:, Status:")
 DeviceList = ("ESP32 #1")
 fullMessage = []
@@ -33,16 +34,16 @@ def messageMaker(message, TempList, Status):
 # Main function Code:
 def TempMeasure(msg):
     fullMessage.clear()
-    Temp0 = TempDevice0
-    temp1 = TempDevice1
-    Temp2 = TempDevice0
-    #Temp0 = random.randint(0, 100)
-    #Temp1 = random.randint(0, 100)
-    #Temp2 = random.randint(0, 100)
-    if Temp1 >= 40 or Temp1 >= 30:
+    #Temp0 = TempDevice0
+    #temp1 = TempDevice1
+    #Temp2 = TempDevice0
+    Temp0 = random.randint(0, 100)
+    Temp1 = random.randint(0, 100)
+    Temp2 = random.randint(0, 100)
+    if Temp1 - Temp2 >= 30:
         print("Vand Sluk 1")
         Status = False
-    elif Temp1 <= 40 or Temp1 <= 30:
+    elif Temp1 - Temp2 <= 30:
         print("Vand Åben 2")
         Status = True
     else:
@@ -51,7 +52,7 @@ def TempMeasure(msg):
     TempList = Temp0, Temp1, Temp2
     newmsg = messageMaker(message, TempList, Status)
     return newmsg
-while True:
-    newmessage = TempMeasure(message)
-    print(newmessage)
-    time.sleep(1)
+#while True:
+#    newmessage = TempMeasure(message)
+#    print(newmessage)
+#    time.sleep(1)
