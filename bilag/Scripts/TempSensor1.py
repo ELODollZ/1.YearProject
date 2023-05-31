@@ -6,7 +6,7 @@ from machine import Pin, ADC
 import time
 
 # Variable list:
-PinNumber = 32
+PinNumber = 35
 tempSensor = ADC(Pin(PinNumber))
 tempSensor.atten(ADC.ATTN_0DB)
 # Config Information value calculation
@@ -17,7 +17,7 @@ MaxVoltage = 0.950
 mV = 0.010
 # Main function code:
 
-def tempReadSensor0():
+def tempReadSensor1():
     #print(1)
     value = tempSensor.read()
     #Test1 = (MaxADC / )

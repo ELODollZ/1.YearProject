@@ -1,6 +1,10 @@
 import requests
 
-def get_weather(api_key, city):
+def get_weather():
+    # Replace with your API key
+    api_key = "32abc8ee1a1ecea1daa12ad2aee4b5d6"
+    # Replace with your desired city name
+    city = "Copenhagen"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
     data = response.json()
@@ -14,10 +18,4 @@ def get_weather(api_key, city):
         print(f"Humidity: {humidity}%")
     else:
         print("Unable to fetch weather data.")
-
-# Replace with your API key
-api_key = "32abc8ee1a1ecea1daa12ad2aee4b5d6"
-# Replace with your desired city name
-city = "Copenhagen"
-
-get_weather(api_key, city)
+get_weather()
