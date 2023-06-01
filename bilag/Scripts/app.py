@@ -31,7 +31,7 @@ def readTemp():
         time.sleep(2)
         try:
             #message = sensor.read()
-            message = sensor
+            #message = sensor
             HentTemperatur()
             #print(message)
         except:
@@ -39,7 +39,6 @@ def readTemp():
 
 tempThread = threading.Thread(target=readTemp)
 tempThread.start()
-
 
 # Host WebPage:
 if __name__ == '__main__':
