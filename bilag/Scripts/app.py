@@ -5,6 +5,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 import time
 import threading
+import sys
 from TempMeasure import TempMeasure, fullMessage
 
 # Variables:
@@ -16,7 +17,7 @@ socketio = SocketIO(app)
 # App route paths:
 @socketio.on('hentTemp')
 def HentTemperatur():
-    message = TempMeasure(fullMessage)
+    message = (sys.argv[2])
     time.sleep(0.5)
     socketio.emit('HentTemperatur', message)
 @app.route('/')

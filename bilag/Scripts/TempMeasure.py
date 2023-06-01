@@ -27,7 +27,8 @@ def messageMaker(message, TempList, Status):
         newmsg = message.replace("DeviceNumber", Swapped)
         Swapped = "Temp1, " + str(TempList[0]) + ", Temp2, " + str(TempList[1]) + ", Temp3, " + str(TempList[2])  
         newmsg = newmsg.replace("Temp", Swapped)
-        Swapped = "Status, " + str(Status)+ "," + str(time.ctime()) + ", Fixed"
+        GotTime = str(time.asctime())
+        Swapped = "Status, " + str(Status)+ "," + GotTime + ", Fixed"
         newmsg = newmsg.replace("Status", Swapped)
     fullMessage.append(newmsg)
     newmsg = str(fullMessage)
@@ -52,7 +53,7 @@ def TempMeasure(msg):
     if Temp1 - Temp2 >= 30:
         print("Vand Sluk 1")
         Status = False
-        VentileSwitch.Off()
+        VentileSwitch.off()
     elif Temp1 - Temp2 <= 30:
         print("Vand Åben 2")
         Status = True
