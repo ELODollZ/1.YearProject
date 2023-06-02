@@ -21,9 +21,9 @@ last_message = 0
 counter = 0
 message_interval = 10
 ### Credits:
-ssid = 'HotSpot'
-password = 'Daniel2901Nybo!'
-RPI_IP_Add = '192.168.203.54'
+ssid = 'Gruppe9PI'
+password = 'Gruppe9PI'
+RPI_IP_Add = '192.168.53.56'
 ESP32_IP_Add = '192.168.239.88'
 port = 1883
 client_id = f'python-mqtt-{0807}'

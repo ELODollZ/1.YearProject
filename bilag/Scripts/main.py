@@ -5,20 +5,21 @@
 import sys
 import random
 import time
+from TempMeasure import TempMeasure
 # Import fra onboardscripts:
 from umqttsimple import MQTTClient
 # Variables:
-username = 'RPI/1YearProject'
-password = 'RPIPass/1Year'
+username = '1YearProject'
+password = 'public'
 broker = 'broker.RPI.io'
-msg = ("DeviceName:", "Temp", "Day")
-Originmsg = ("DeviceName:", "Temp", "Day")
+msg = ("DeviceName:", "Temp:", "Status:")
+Originmsg = ("DeviceName:", "Temp:", "Status:")
 
 
 # Connection Function to RPI Broker
 def sub_cb(topic, msg):
     print((topic, msg))
-    if topic == b'1Year/ESP32Data' and msg == b'1Year/received':
+    if topic == b'ESP32Data' and msg == b'received':
         print('ESP Sendt Data')
 
 def connect_and_subscribe():
@@ -36,7 +37,7 @@ def restart_and_reconnect():
 # Startups
 try:
     client = connect_and_subscribe()
-    measuredData(Originmsg)
+    TempMeasure(Originmsg)
 except OSError as e:
     restart_and_reconnect()
 # Main Code:
@@ -44,15 +45,16 @@ while True:
     try:
         client.check_msg()
         if(time.time() - last_message) > message_interval:
-            msg = measuredData(message)
+            msg = TempMeasure(msg)
+            msg = str(msg)
             client.publish(topic, msg)
             last_message = time.time()
             time.sleep(0.5)
             print("------------------------------")
     except OSError as e:
         restart_and_reconnect()
-    except TypeError:
-        print("Type error somewhere in code, functional")
+#    except TypeError:
+#        print("Type error somewhere in code, functional")
     except:
         print("STOP!")
         sys.exit

@@ -6,7 +6,7 @@ from machine import Pin, ADC
 import time
 
 # Variable list:
-PinNumber = 32
+PinNumber = 35
 tempSensor = ADC(Pin(PinNumber))
 tempSensor.atten(ADC.ATTN_0DB)
 # Config Information value calculation

@@ -5,18 +5,22 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 import time
 import threading
+from BashInput import GetInputFromBash
 
 # Variables:
 sensor = 25
-sidsteTemp = None
+message = None
 app = Flask(__name__)
 socketio = SocketIO(app)
 
 # App route paths:
 @socketio.on('hentTemp')
 def HentTemperatur():
+    message = GetInputFromBash()
+    print(message)
+    message = str(message)
     time.sleep(0.5)
-    socketio.emit('HentTemperatur', sidsteTemp)
+    socketio.emit('HentTemperatur', message)
 @app.route('/')
 def index():
     return render_template('Index.html')
@@ -24,18 +28,18 @@ def index():
 
 # Main Code:
 def readTemp():
-    global sidsteTemp
+    global message
     while True:
         time.sleep(2)
         try:
-            #sidsteTemp = sensor.read()
-            sidsteTemp = sensor
+            #message = sensor
+            HentTemperatur()
+            #print(message)
         except:
-            sidsteTemp = None
+            message = None
 
 tempThread = threading.Thread(target=readTemp)
 tempThread.start()
-
 
 # Host WebPage:
 if __name__ == '__main__':
