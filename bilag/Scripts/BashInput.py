@@ -8,10 +8,9 @@ import sys
 message = ""
 BashInput = ""
 # Main Code
-def GetInputFromBash():
+def GetInputFromBash(BashInput):
     BashInput.clear()
     for message in sys.stdin:
-        message = str(message)
         BashInput += [message]
     print(BashInput)
     return BashInput
