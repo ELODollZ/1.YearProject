@@ -15,6 +15,6 @@ do
 	echo $Name0 $Value0 $Name1 $Value1 $Name2 $Value2 $Name3 $Value3 $Name4 $Value4 $Fixed
 	messages = $Name0 $Value0 $Name1 $Value1 $Name2 $Value2 $Name3 $Value3 $Name4 $Value4 $Fixed
 	echo $messages
-	python app.py $messages
+	python app.py "$messages"
 done
 done
