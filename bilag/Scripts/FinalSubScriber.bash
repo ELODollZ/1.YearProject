@@ -10,8 +10,9 @@ while true
 do
 mosquitto_sub	-h	localhost	-t	"1Year/ESP32Data" -C	1	-R	$messages | while read messages
 do
-	echo "$messages"
-	python BashInput.py "$messages"
+	
+	Fullmessage=$(printf "%s;" "$messages")
+	python3 BashInput.py "$Fullmessage"
 done
 done
 #

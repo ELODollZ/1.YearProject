@@ -32,7 +32,8 @@ def readTemp():
     while True:
         time.sleep(2)
         try:
-            #message = sensor.read()
+            message = GetInputFromBash(messages)
+            print(message)
             #message = sensor
             HentTemperatur()
             #print(message)
