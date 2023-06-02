@@ -11,6 +11,7 @@ BashInput = ""
 def GetInputFromBash():
     BashInput.clear()
     for message in sys.stdin:
-        BashInput.append() = message
+        str(message) = message
+        BashInput += [message]
     print(BashInput)
     return BashInput
