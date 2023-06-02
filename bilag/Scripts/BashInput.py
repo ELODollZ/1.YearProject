@@ -12,6 +12,6 @@ def GetInputFromBash(BashInput):
     print(BashInput)
     for BashInput in sys.stdin:
         messages += [BashInput]
-    BashInput = messages
+    BashInput = str(messages)
     print(BashInput)
     return BashInput
