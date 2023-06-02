@@ -8,10 +8,10 @@ IFS=','
 # Main Code
 while true
 do
-mosquitto_sub	-h	localhost	-t	"1Year/ESP32Data" -C	1	-R	$messages | python app.py
+mosquitto_sub	-h	localhost	-t	"1Year/ESP32Data" -C	1	-R	$messages | while read messages
 do
 	echo "$messages"
-	# python app.py "$messages"
+	python BashInput.py "$messages"
 done
 done
 #
