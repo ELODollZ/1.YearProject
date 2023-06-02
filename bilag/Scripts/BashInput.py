@@ -9,7 +9,7 @@ messages = ""
 BashInput = ""
 # Main Code
 def GetInputFromBash(BashInput):
-    BashInput.clear()
+    print(BashInput)
     for BashInput in sys.stdin:
         messages += [BashInput]
     BashInput = messages
