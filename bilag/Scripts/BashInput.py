@@ -5,12 +5,13 @@
 import sys
 
 # Variables
-message = ""
+messages = ""
 BashInput = ""
 # Main Code
 def GetInputFromBash(BashInput):
     BashInput.clear()
-    for message in sys.stdin:
-        BashInput += [message]
+    for BashInput in sys.stdin:
+        messages += [BashInput]
+    BashInput = messages
     print(BashInput)
     return BashInput
