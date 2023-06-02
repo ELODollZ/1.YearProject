@@ -6,7 +6,7 @@ import sys
 
 # Variables
 messages = ""
-BashInput = ""
+BashInput = "".join(sys.argv[1:])
 # Main Code
 def GetInputFromBash(BashInput):
     print(BashInput)
