@@ -5,12 +5,15 @@
 import sys
 
 # Variables
-messages = ""
-BashInput = "".join(sys.argv[1:])
+BashInput = ""
+
 # Main Code
-def GetInputFromBash(BashInput):
+def GetInputFromBash():
     var1 = sys.argv[1]
-    print(BashInput) 
+    print(var1)
     BashInput = var1.split(";")
     print(BashInput)
     return BashInput
+#BashInput = GetInputFromBash()
+#print(BashInput)
+

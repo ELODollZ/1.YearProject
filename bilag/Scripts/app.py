@@ -5,7 +5,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 import time
 import threading
-from BashInput import GetInputFromBash, messages
+from BashInput import GetInputFromBash
 
 # Variables:
 sensor = 25
@@ -16,7 +16,7 @@ socketio = SocketIO(app)
 # App route paths:
 @socketio.on('hentTemp')
 def HentTemperatur():
-    message = GetInputFromBash(messages)
+    message = GetInputFromBash()
     print(message)
     message = str(message)
     time.sleep(0.5)
@@ -32,8 +32,6 @@ def readTemp():
     while True:
         time.sleep(2)
         try:
-            message = GetInputFromBash(messages)
-            print(message)
             #message = sensor
             HentTemperatur()
             #print(message)
