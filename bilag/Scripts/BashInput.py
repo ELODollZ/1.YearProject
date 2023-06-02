@@ -9,6 +9,7 @@ messages = ""
 BashInput = "".join(sys.argv[1:])
 # Main Code
 def GetInputFromBash(BashInput):
+    BashInput = "".join(sys.argv[1:])
     print(BashInput)
     for BashInput in sys.stdin:
         messages += [BashInput]

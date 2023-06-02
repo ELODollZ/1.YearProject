@@ -17,6 +17,7 @@ socketio = SocketIO(app)
 @socketio.on('hentTemp')
 def HentTemperatur():
     message = GetInputFromBash(messages)
+    print(message)
     message = str(message)
     time.sleep(0.5)
     socketio.emit('HentTemperatur', message)
