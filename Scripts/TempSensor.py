@@ -17,7 +17,7 @@ MaxVoltage = 0.950
 mV = 0.010
 # Main function code:
 
-def tempReadSensor1():
+def tempReadSensor0():
     #print(1)
     value = tempSensor.read()
     #Test1 = (MaxADC / )
@@ -26,6 +26,3 @@ def tempReadSensor1():
     print(value)
     print(CelciusValue)
     return CelciusValue
-#while True:
-#    tempReadSensor()
-#    time.sleep(1)

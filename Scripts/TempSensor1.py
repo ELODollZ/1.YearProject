@@ -26,6 +26,3 @@ def tempReadSensor1():
     print(value)
     print(CelciusValue)
     return CelciusValue
-#while True:
-#    tempReadSensor()
-#    time.sleep(1)
