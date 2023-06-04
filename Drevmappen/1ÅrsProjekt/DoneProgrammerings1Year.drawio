@@ -1,0 +1,847 @@
+<mxfile host="app.diagrams.net" modified="2023-06-04T12:48:02.755Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="I5XXAobiX6SeNIo6w5M4" version="21.3.7" type="device">
+  <diagram name="Page-1" id="WKrAr6XFciLD3pX4lgcF">
+    <mxGraphModel dx="2391" dy="1117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-1" target="lgtSEWiLRSyI6J6SHNsr-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="125" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-4" target="lgtSEWiLRSyI6J6SHNsr-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-4" value="While True loop starts" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="115" y="380" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-5" target="lgtSEWiLRSyI6J6SHNsr-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-5" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="85" y="255" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-9" value="ESP Main" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="135" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-6" value="Import libary&#39;s, Pin, ADC, Sys, TemperaturKode" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="130" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-12" target="lgtSEWiLRSyI6J6SHNsr-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-12" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="85" y="150" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-15" value="&lt;div&gt;Boot file køres, Forbindelse internet oprettes.&lt;/div&gt;&lt;div&gt;Forbindelse til RPI oprettes&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="110" y="150" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-17" target="lgtSEWiLRSyI6J6SHNsr-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-17" value="Try / Except oprettes til" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="115" y="520" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-19" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="295" y="535" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-22" target="lgtSEWiLRSyI6J6SHNsr-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-22" value="&lt;div&gt;Tjekker larget besked om skal sendes&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="310" y="550" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-25" target="lgtSEWiLRSyI6J6SHNsr-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-25" target="lgtSEWiLRSyI6J6SHNsr-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-25" target="lgtSEWiLRSyI6J6SHNsr-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-25" target="lgtSEWiLRSyI6J6SHNsr-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-25" target="lgtSEWiLRSyI6J6SHNsr-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="790" />
+              <mxPoint x="170" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-25" value="IF statement send besked?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="300" y="670" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-27" target="lgtSEWiLRSyI6J6SHNsr-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-27" value="Hvis tid gået mindre end sidste besked condition" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="65" y="680" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-31" target="lgtSEWiLRSyI6J6SHNsr-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-31" target="lgtSEWiLRSyI6J6SHNsr-190" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="650" />
+              <mxPoint x="590" y="650" />
+              <mxPoint x="590" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-31" value="Opret lokal variable msg, til værdien af funktion TempMeasure koden" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="480" y="670" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-33" value="Ja" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="400" y="680" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.465;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-34" target="lgtSEWiLRSyI6J6SHNsr-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-34" value="msg formaters til en string" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="630" y="670" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-36" target="lgtSEWiLRSyI6J6SHNsr-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-36" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="600" y="810" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-37" value="funktion til at publish til RPI kaldes og gives værdien af linje og besked der sendes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="620" y="820" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-39" target="lgtSEWiLRSyI6J6SHNsr-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="505" y="960" />
+              <mxPoint x="820" y="960" />
+              <mxPoint x="820" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-39" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="440" y="810" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-41" value="Tid siden sidste opdaters med nuværende værdi, fra time modul" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="460" y="820" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-42" value="Except køres som en OSError, med og kalder enkelt funktion restart og reconnect til Brokeren" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="270" y="810" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-45" target="lgtSEWiLRSyI6J6SHNsr-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-45" value="Except hvilken som helst anden fejl, Stop message, og kaldes exit af kode." style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="120" y="810" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-48" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="330" y="970" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-53" target="lgtSEWiLRSyI6J6SHNsr-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-53" value="Tempmeasure funktion&lt;br&gt;(messageMaker)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="920" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-55" target="lgtSEWiLRSyI6J6SHNsr-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-55" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="890" y="255" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-56" value="Import libary&#39;s, Pin, ADC,&amp;nbsp; TemperaturKode" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="940" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-59" target="lgtSEWiLRSyI6J6SHNsr-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-59" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="255" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-60" value="Variable oprettes, og tilgives værdier" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="265" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-63" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="380" y="150" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-64" target="lgtSEWiLRSyI6J6SHNsr-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-64" value="Variable oprettes, og tilgives værdier" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-68" target="lgtSEWiLRSyI6J6SHNsr-70" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-68" value="Funktion messageMaker med 3 augmenter an gives " style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="245" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-70" target="lgtSEWiLRSyI6J6SHNsr-72" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-70" value="For loop oprettes for antallet af ESP32 enheder, og køres per antal" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1520" y="245" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-72" target="lgtSEWiLRSyI6J6SHNsr-74" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-72" value="lokal variable oprettes &quot;Swapped&quot; variablen bruges til indsat værdier i listen" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1520" y="390" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-74" target="lgtSEWiLRSyI6J6SHNsr-75" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-74" value="lokal variable newmsg oprettes og modtager væriden fra den nye liste af data" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1370" y="390" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-75" target="lgtSEWiLRSyI6J6SHNsr-74" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-75" target="lgtSEWiLRSyI6J6SHNsr-80" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-75" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="380" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-77" value="udskiftning af variable til listen sker følgende 3 gange, totalt (sidste&amp;nbsp; 2 køres totalt 3 gange med forskellige informationer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1192.5" y="395" width="105" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-80" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="960" y="395" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-82" target="lgtSEWiLRSyI6J6SHNsr-86" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-82" value="sender den nye besked til variablen &quot;fullMessage&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="980" y="395" width="80" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-85" target="lgtSEWiLRSyI6J6SHNsr-89" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="635" />
+              <mxPoint x="1170" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-85" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="960" y="590" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-86" value="fullmessage laves til en string så alt vores data er i string format" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="980" y="590" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-89" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1339.9999999999995" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-89" value="den nye list af strings splittes i 11 dele, listen indeholder nu 12 elementer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="585" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-93" target="lgtSEWiLRSyI6J6SHNsr-95" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-93" value="Tempmeasure funktion&lt;br&gt;(samlings funktionen)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1780" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-95" target="lgtSEWiLRSyI6J6SHNsr-97" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-95" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1750" y="255" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-96" value="Import libary&#39;s, Pin, ADC,&amp;nbsp; TemperaturKode" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1800" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-97" target="lgtSEWiLRSyI6J6SHNsr-100" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-97" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="255" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-98" value="fullMessage clears, så listen er tom" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2000" y="265" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-100" target="lgtSEWiLRSyI6J6SHNsr-101" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-100" target="lgtSEWiLRSyI6J6SHNsr-107" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-100" value="3 temperatur sensor koder kaldes sættes til en variable" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2170" y="245" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-101" target="lgtSEWiLRSyI6J6SHNsr-100" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-101" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2320" y="265" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-104" value="De 3 temperatur målers værdi" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2330" y="270" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-107" target="lgtSEWiLRSyI6J6SHNsr-110" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-107" target="lgtSEWiLRSyI6J6SHNsr-116" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-107" value="If statement oprettes, hvis temp1 - temp2 højre end 30" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2155" y="380" width="130" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-110" target="lgtSEWiLRSyI6J6SHNsr-112" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-110" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2045" y="573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-110" value="If statement oprettes, hvis temp1 - temp2 mindre end 30" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="380" width="130" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-112" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1810" y="412.5" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-113" target="lgtSEWiLRSyI6J6SHNsr-121" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-113" value="&lt;div&gt;hvis ingen betingelser opfyldt&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1820" y="412.5" width="80" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-116" value="sæt status variable til False&lt;br&gt;skift ventileSwitch&#39;en til off" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2170" y="570" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-118" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1860" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2220" y="720" />
+              <mxPoint x="1861" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-118" value="sæt status variable til False&lt;br&gt;skift ventileSwitch&#39;en til off" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2170" y="570" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-119" target="lgtSEWiLRSyI6J6SHNsr-129" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2040" y="720" />
+              <mxPoint x="1860" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-119" value="sæt status variable til True&lt;br&gt;skift ventileSwitch&#39;en til on" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="570" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-121" target="lgtSEWiLRSyI6J6SHNsr-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-121" value="print fejl i shell" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1810" y="570" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-123" value="ja" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2210" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-124" value="ja" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2040" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-126" value="nej" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2100" y="412.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-127" value="nej" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1920" y="415" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-128" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1810" y="750" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-129" target="lgtSEWiLRSyI6J6SHNsr-134" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-129" value="TempList opdaters med de nye værdiere" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1820" y="750" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.145;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-134" target="lgtSEWiLRSyI6J6SHNsr-135" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2070" y="783" />
+              <mxPoint x="2070" y="783" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-134" target="lgtSEWiLRSyI6J6SHNsr-141" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2000" y="880" />
+              <mxPoint x="1885" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-134" value="Opdater nybesked variable med funktions værdi" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1950" y="750" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-135" target="lgtSEWiLRSyI6J6SHNsr-134" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2100" y="825" />
+              <mxPoint x="2100" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-135" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" parent="1" vertex="1">
+          <mxGeometry x="2125" y="770" width="85" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-136" value="Funktion messageMaker" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2132.5" y="795" width="67.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-140" target="lgtSEWiLRSyI6J6SHNsr-174" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-140" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1820" y="910" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-141" value="returner den newbesked variable" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="910" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-144" value="message, TempList, status augment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="730" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-145" target="lgtSEWiLRSyI6J6SHNsr-146" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-145" value="&lt;div&gt;TempSensor&lt;/div&gt;&lt;div&gt;(0, 1, 2)&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2640" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-146" target="lgtSEWiLRSyI6J6SHNsr-149" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-146" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="2610" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-147" value="Import libary&#39;s, Pin, ADC, " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2660" y="225" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-149" target="lgtSEWiLRSyI6J6SHNsr-153" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-149" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="2840" y="200" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-150" value="Pin Numer sætes, og bit størrelsen på målerne (0DB)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2860" y="200" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-153" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="3040" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-154" target="lgtSEWiLRSyI6J6SHNsr-155" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3120" y="330" />
+              <mxPoint x="2690" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-154" value="&lt;div&gt;variablerne til udregning af temperatur laves (konfig setings til temperatur måleren)&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="3060" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-155" target="lgtSEWiLRSyI6J6SHNsr-158" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-155" value="Funktion oprettes" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2640" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-158" target="lgtSEWiLRSyI6J6SHNsr-160" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-158" target="lgtSEWiLRSyI6J6SHNsr-163" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2860" y="490" />
+              <mxPoint x="2690" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-158" value="variable oprettes og sættes til den rå værdi der er læst" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2810" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-160" target="lgtSEWiLRSyI6J6SHNsr-158" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-160" value="Sensor data" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2960" y="380" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.013;entryY=0.651;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-163" target="lgtSEWiLRSyI6J6SHNsr-164" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-163" value="Variabler til voltage og Celcius oprettes og til sættes en værdi" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2640" y="520" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-164" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3120" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-164" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="2790" y="535" width="200" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-165" value="Formlen for data ((Value / MaxADC) * MaxVoltage) / miliVoltage) + offset (hvis nødvendigt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2820" y="540" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="lgtSEWiLRSyI6J6SHNsr-172" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3170" y="640" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-172" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="3120" y="680" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-174" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="2100" y="940" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-177" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="3120" y="550" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-178" value="Returner Celcius væriden" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="3130" y="555" width="100" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-185" target="lgtSEWiLRSyI6J6SHNsr-187" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-185" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="595" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-187" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="800" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-188" value="newmsg returners" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="595" width="90" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-189" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" parent="1" vertex="1">
+          <mxGeometry x="480" y="560" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-190" target="lgtSEWiLRSyI6J6SHNsr-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-190" value="TempMeasure Funktion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="475" y="570" width="95" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-195" target="lgtSEWiLRSyI6J6SHNsr-199" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-195" value="App.py" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="120" y="1160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-196" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="345" y="1310" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-197" target="lgtSEWiLRSyI6J6SHNsr-203" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1440" />
+              <mxPoint x="100" y="1440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-197" value="Variable oprettes, og tilgives værdier" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="365" y="1320" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-199" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-199" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="125" y="1310" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-200" value="Import libary&#39;s, flask, flaskSocketIO, threading, time, Input" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1310" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-203" value="Finder pathen til HentTemp i HTML&lt;br&gt;Opretter funktion til emit data til hjemmesiden" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1480" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-205" target="lgtSEWiLRSyI6J6SHNsr-209" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-205" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="315" y="1480" width="145" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-206" value="message modtages fra Input file, laves til string og emittes til hjemmesiden i &quot;HentTemp&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="335" y="1480" width="105" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-209" target="lgtSEWiLRSyI6J6SHNsr-210" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-209" value="Finder pathen til index i HTML&lt;br&gt;Opretter til hjemmesiden" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="540" y="1480" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-210" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="695" y="1480" width="145" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-216" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-211" target="lgtSEWiLRSyI6J6SHNsr-215" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="767" y="1610" />
+              <mxPoint x="150" y="1610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-211" value="returner HTML templaten index" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="715" y="1480" width="105" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-214" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" parent="1" vertex="1">
+          <mxGeometry x="210" y="1495" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-215" target="lgtSEWiLRSyI6J6SHNsr-217" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-215" value="funktion til at læse Temperatur data laves" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1630" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-217" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="270" y="1650" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-218" target="lgtSEWiLRSyI6J6SHNsr-220" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-218" value="Messages laves global" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="285" y="1650" width="75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-233" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-220" target="lgtSEWiLRSyI6J6SHNsr-232" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-220" value="while True laves, og sleep i 2 sekunder, til thread kørelse" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="430" y="1630" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-222" target="lgtSEWiLRSyI6J6SHNsr-240" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="2020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-222" value="forsøger at hente data fra HentTemperatur koden" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="600" y="1820" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-225" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1495" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.022;entryY=0.896;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-226" target="lgtSEWiLRSyI6J6SHNsr-203" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-226" value="HentTemperatur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-229" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" parent="1" vertex="1">
+          <mxGeometry x="747.5" y="1840" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-231" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-230" target="lgtSEWiLRSyI6J6SHNsr-222" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-230" value="HentTemperatur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="747.5" y="1855" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.569;entryY=0.023;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-232" target="lgtSEWiLRSyI6J6SHNsr-222" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.169;exitY=0.659;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-232" target="lgtSEWiLRSyI6J6SHNsr-235" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="1716" />
+              <mxPoint x="630" y="1760" />
+              <mxPoint x="430" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-232" value="Try" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="620" y="1650" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-235" target="lgtSEWiLRSyI6J6SHNsr-240" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-235" value="Ellers sættes message til None" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="380" y="1820" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-238" value="Ja" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="680" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-239" value="Nej" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="492.5" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-240" target="lgtSEWiLRSyI6J6SHNsr-243" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2100" />
+              <mxPoint x="347" y="2100" />
+              <mxPoint x="347" y="2030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-240" value="Thread oprettes og starts" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1970" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-246" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-243" target="lgtSEWiLRSyI6J6SHNsr-245" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-243" value="Host webserver til port &quot;0.0.0.0&quot;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="120" y="1980" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-245" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="120" y="1820" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-247" value="CTRL + C" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="185" y="1920" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-256" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-248" target="lgtSEWiLRSyI6J6SHNsr-250" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-248" value="Bash Code" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="920" y="1160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-258" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.43;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-249" target="lgtSEWiLRSyI6J6SHNsr-252" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="1480" />
+              <mxPoint x="1060" y="1440" />
+              <mxPoint x="1228" y="1440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-249" value="While True oprettes" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="920" y="1430" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-250" target="lgtSEWiLRSyI6J6SHNsr-249" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-250" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="920" y="1300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-251" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1082.5" y="1580" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-252" target="lgtSEWiLRSyI6J6SHNsr-251" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-252" target="lgtSEWiLRSyI6J6SHNsr-253" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-252" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.parallel_mode;pointerEvents=1" parent="1" vertex="1">
+          <mxGeometry x="1187.5" y="1480" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-263" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.025;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-253" target="lgtSEWiLRSyI6J6SHNsr-261" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370" y="1770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-253" value="While true til at sættes messages" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="1560" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-259" value="Tom variable oprettes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="930" y="1300" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-264" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-260" target="lgtSEWiLRSyI6J6SHNsr-261" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-260" value="mosquitto_sub command køres, 1 gang, gentagende" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="1580" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-265" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-261" target="lgtSEWiLRSyI6J6SHNsr-262" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-261" value="formater variablen til en string med ; til splitting" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1197.5" y="1710" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-267" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-262" target="lgtSEWiLRSyI6J6SHNsr-266" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-262" value="passer variablen til BashInput" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1197.5" y="1855" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-266" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="2000" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-269" target="lgtSEWiLRSyI6J6SHNsr-274" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-269" value="Bash Input Kode" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1780" y="1150" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-271" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1780" y="1390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-273" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1750" y="1280" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-278" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-274" target="lgtSEWiLRSyI6J6SHNsr-277" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-274" value="import sys" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1775" y="1280" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-277" target="lgtSEWiLRSyI6J6SHNsr-279" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-277" value="Variable oprettes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="1390" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-279" target="lgtSEWiLRSyI6J6SHNsr-281" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-279" value="funktion oprettes til at hente data" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1960" y="1370" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-284" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-281" target="lgtSEWiLRSyI6J6SHNsr-283" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-281" value="variable oprettes til at modtage indput fra sys.argv[InputDataPlads]" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2150" y="1350" width="155" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-286" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-283" target="lgtSEWiLRSyI6J6SHNsr-285" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-283" value="print variablen" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="2190" y="1540" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-290" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-285" target="lgtSEWiLRSyI6J6SHNsr-288" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-285" value="&lt;div&gt;decode den (split til et augment ved ; )&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1995" y="1540" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-288" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="1820" y="1550" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lgtSEWiLRSyI6J6SHNsr-289" target="lgtSEWiLRSyI6J6SHNsr-292" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-289" value="returners bashInput variablen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1830" y="1550" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgtSEWiLRSyI6J6SHNsr-292" value="Slut" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1820" y="1670" width="100" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
